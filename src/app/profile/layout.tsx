@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import PrivateRoutes from "@/context/PrivateRoutes";
+import PrivateRoutes from "@/Routes/PrivateRoutes";
 
 function Loyout({ children }: { children: ReactNode }) {
   return (
