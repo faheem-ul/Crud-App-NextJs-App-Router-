@@ -2,14 +2,12 @@
 
 import { ReactNode, useContext, useEffect } from "react";
 
-import { useRouter, usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
 
-import { AuthContext } from "./context";
-import path from "path";
+import { AuthContext } from "../context/context";
 
 function PrivateRoutes({ children }: { children: ReactNode }) {
   const router = useRouter();
-  const pathname = usePathname();
 
   const { user, loading } = useContext(AuthContext);
 

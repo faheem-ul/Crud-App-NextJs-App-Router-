@@ -6,7 +6,7 @@ import { Toaster } from "react-hot-toast";
 import "./globals.css";
 import Footer from "./footer/page";
 import AuthProvider from "@/context/context";
-import PrivateRoutes from "@/context/PrivateRoutes";
+import PrivateRoutes from "@/Routes/PrivateRoutes";
 
 const inter = Inter({ subsets: ["latin"] });
 
