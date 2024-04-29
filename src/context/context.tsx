@@ -30,7 +30,7 @@ function AuthProvider({ children }: { children: ReactNode }) {
       setLoading(false);
     });
     return () => unsubscribe();
-  }, []);
+  }, [user, loading]);
 
   return (
     <AuthContext.Provider value={{ user, loading }}>
