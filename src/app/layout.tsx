@@ -5,6 +5,7 @@ import { Toaster } from "react-hot-toast";
 
 import "./globals.css";
 import Footer from "./footer/page";
+import AuthProvider from "@/context/context";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,9 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className} suppressHydrationWarning={true}>
-        <Toaster />
-        {children}
-        {/* <Footer /> */}
+        <AuthProvider>
+          <Toaster />
+          {children}
+          {/* <Footer /> */}
+        </AuthProvider>
       </body>
     </html>
   );
